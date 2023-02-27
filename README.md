@@ -8,9 +8,9 @@ FROM user;
 SELECT f.name,  
       COUNT(l.user_id) AS likes  
 FROM film AS f  
-LEFT OUTER JOIN likes AS l ON f.film_id = l.film_id
-GROUP BY film_id
-ORDER BY likes DESC
+LEFT OUTER JOIN likes AS l ON f.film_id = l.film_id  
+GROUP BY film_id  
+ORDER BY likes DESC  
 LIMIT 10;   
 Followers - это те кто подал заявки в друзья, но она пока не подтверждена.
 
