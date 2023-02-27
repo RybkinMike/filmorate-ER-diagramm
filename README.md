@@ -6,7 +6,7 @@ SELECT *
 FROM user  
 Для получения 10 самых популярных фильмов:  
 SELECT f.name,  
-       COUNT(l.user_id) AS likes  
+      COUNT(l.user_id) AS likes  
 FROM film AS f  
 LEFT OUTER JOIN likes AS l ON f.film_id = l.film_id  
 LIMIT 10;   
